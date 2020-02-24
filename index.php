@@ -82,20 +82,15 @@
 
   <!-- Main -->
   <main>
-    <ul>
       <?php foreach ($db as $key => $questions): ?>
-      <li> <?php echo $key; ?>
-        <ul>
-          <?php foreach ($questions as $key => $question): ?>
-            <?php foreach ($question as $key => $answer): ?>
-              <li><?php echo $answer; ?>  
-            <?php endforeach; ?>
-          <?php endforeach; ?></li>
-        </ul>
-      </li>
-    <?php endforeach; ?>
-    </ul>
+       <h2><?php echo $key; ?></h2>
 
+       <?php foreach ($questions as $key => $question): ?>
+         <?php foreach ($question as $key => $answer): ?>
+           <p> <?php echo $answer; ?></p>
+         <?php endforeach; ?>
+       <?php endforeach; ?>
+     <?php endforeach; ?>
 
   </main>
   <!-- /Main -->

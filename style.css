@@ -57,3 +57,14 @@ main {
   width: 80%;
   margin: 40px auto;
 }
+main h2 {
+  margin: 60px 0;
+  color: black;
+}
+main p {
+  margin-bottom: 20px;
+}
+main a {
+  color:  #3F70D7;
+  font-weight: normal;
+}
